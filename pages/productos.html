@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fondo</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+        }
+        .padre{
+            background-color: orange;
+        }
+        .oscurecer{
+            background-color: rgba(22, 22, 22, 0.469);
+            width:100%;
+            height: 100vh;
+            position:absolute;
+            top:0;
+            z-index:9;
+           /* position:absolute;
+            top:0;
+            left:0;
+            z-index: 10;*/
+        }
+        
+        .fondo{
+            background-image: url("../assets/img/xxxxxxx.jpg");
+            background-size: cover;
+            background-position: center;
+           /* background-color: rgb(255, 255, 255);*/
+            width: 100%;
+            height: 500vh;
+            color:rgb(255, 255, 255);
+             z-index:8;
+
+        }
+        .contenido{
+            position:absolute;
+            top: 0%;
+            left: 50%;
+            height: 300vh;
+            transform: translate(-50%, -50%);
+            z-index:10;
+            color:rgb(7, 7, 7);
+        }
+
+    </style>
+</head>
+<body>
+   
+    <section class="padre">
+        <div class="oscurecer">
+        </div>
+        <section class="fondo">
+        </section>
+    </section>
+    <section class="contenido">
+        <div>
+            <img src="../assets/img/carne.jpg" alt="producto">
+            <h3>Carne a las brasas al romero</h3>
+            <h4>$7500.00</h4>
+            <a href="">Agregar Carrito</a>
+        </div>
+        <div>
+            <img src="../assets/img/salmon.jpg" alt="producto">
+            <h3>Salmón ahumado con hierbas</h3>
+            <h4>$9000.00</h4>
+            <a href="">Agregar Carrito</a>
+        </div>
+        <div>
+            <img src="../assets/img/quiche.jpg" alt="producto">
+            <h3>Tarta quiche clásica</h3>
+            <h4>$5600.00</h4>
+            <a href="">Agregar Carrito</a>
+        </div>
+        <div>
+            <img src="../assets/img/pasta.jpg" alt="producto">
+            <h3>Pasta con salsa oriental</h3>
+            <h4>$2000.00</h4>
+            <a href="">Agregar Carrito</a>
+        </div>
+    </section>
+    
+</body>
+</html>
